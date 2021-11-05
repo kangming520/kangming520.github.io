@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>学生信息管理系统</title>
+
+
+<style type="text/css">
+
+body{ font-family: 'Microsoft YaHei';}
+		/*.panel-body{ padding: 0; }*/
+</style>
+
+
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('table.datalist tr:first').addClass("tableHeader");
+		$("table.datalist tr:even:not(:first)").addClass("evenStyle");
+		$("table.datalist tr:not(:first)").mouseover(function(){
+			$(this).addClass("over");
+			
+		})
+		.mouseout(function(){
+			$(this).removeClass("over");
+		})
+	})
+</script>
+
+
+<script type="text/javascript">
+function confirmDel(id){
+	if(window.confirm('你真的要删除吗？')){
+		location.href = "?ac=delete&id="+id;
+	}
+}
+</script>
+</head>
+<body>
+	
+	<div class="jumbotron">
+		<div class="container">
+			<h1>美好生活从今天开始</h1>
+	  		<h3>——我就是kangming</h3>
+	  		
+		</div>
+		<hr />
+<div style="text-align:center;padding-bottom: 10px;">
+	<h2>学生信息管理中心(前台)</h2>
+	<a href="?ac=add">添加学生</a>
+	共有<font color=red><?php  print_r($num1[0][0]) ?></font>个学生
+</div>
+ 
+	
+
+
+
+<div class="container">
+	<div class="main">
+		<div class="row">
+			<!-- 左侧内容 -->
+			<div class="col-md-3">
+				<div class="list-group">
+					<a href="" class="list-group-item text-center active">学生列表</a>
+					<a href="?ac=add" class="list-group-item text-center">新增学生</a>
+					<a href="./NewsController.class.php" class="list-group-item text-center active">新闻管理</a>
+				</div>
+			</div>
+			<!-- 右侧内容 -->
+			<div class="col-md-9">
+				<!-- 自定义内容 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">学生详情</div>
+					<div class="panel-body">
+						<table class="table table-striped table-responsive table-hover">
+							<tbody>
+								<?php
+									foreach($arrs as $meihang){
+								?>
+								<tr>
+									<td width="50%">ID</td>
+									<td><?php echo $meihang['id']?></td>
+								</tr>
+								<tr>
+									<td>姓名</td>
+									<td><?php echo $meihang['name']?></td>
+								</tr>
+								<tr>
+									<td>邮箱</td>
+									<td><?php echo $meihang['email']?></td>
+								</tr>
+								
+								<tr>
+									<td>手机号</td>
+									<td><?php echo $meihang['phonenum']?></td>
+								</tr>
+								<tr>
+									<td>留言板</td>
+									<td><?php echo $meihang['message']?></td>
+								</tr>
+								
+								<tr>
+									<td>操作选项</td>
+								<td>
+									<a href="?ac=edit&id=<?php echo $meihang['id']?>">修改</a> | 
+									<a href="javascript:void(0)" onClick="confirmDel(<?php echo $meihang['id']?>)">删除</a>
+								</td>
+								</tr>
+								
+								<tr>
+									<td><div></div></td>
+									<td><hr></td>
+								</tr>
+								<tr>
+								<?php }?>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<nav>
+					<ul class="pagination pull-right">
+					<li  class="previous"><a href="#">&laquo;</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</nav>	
+			</div>
+		</div>
+  	</div>
+</div>
+<!-- 尾部 -->
+<div class="jumbotron" style=" margin-bottom:0;margin-top:105px;">
+	<div class="container">
+	<span>&copy; kangming</span>
+	</div>
+</div>
+
+
+	<script src="static/js/jquery-3.1.0.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

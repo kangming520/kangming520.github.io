@@ -1,0 +1,118 @@
+/* html{
+    background-color: lavender;
+	
+} */
+/* 自定义字体 */
+ @font-face {
+      font-family: myfont;
+      src: url('../font/zcool.ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+body{
+	background-color:#000000;
+	background-image: url(../images/1.jpg);
+	/*使用自定义字体*/
+	font-family:'myfont';
+	
+}
+.form-inline .mr-sm-2{
+	font-family:'宋体','微软雅黑';
+	height: 38px;
+	margin-right: 5px;
+	border: 1px solid lightgreen;
+	border-radius: 5px;
+}
+#div1{
+    width: 100%;
+    height: 300px;
+    margin: 150px auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    background-color: white;
+	border-radius: 10px;
+}
+#div1 ul{
+    height: 240px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    list-style: none;
+    background-color: white;
+}
+#div1 ul li{
+    float: left;
+    width: 360px;
+    list-style: none;
+    margin-left: 1.1rem;
+}
+.btn-box{
+    position: relative;
+    left: 0;
+    top: 255px;
+}
+#div1 ul li img{
+    width: 360px;
+}
+.menu{
+    width: 275px;
+    border-radius: 10px;
+}
+#myTab{
+    list-style: none;
+}
+#myTab li{
+    float: left;
+    margin-left: 15px;
+}
+#myTab li a{
+    color: #919191;
+}
+.menu ul li a:hover{
+	color: #00A862!important;
+}
+.nav li:hover{
+	transform: scale(1.2);
+}
+/* .ab{
+    color: #00A862!important;
+} */
+.list{
+    min-width: 600px;
+}
+.list div{
+    margin-bottom: 20px;
+}
+.blog-border{
+    border-radius: 10px;
+}
+.retract{
+    text-indent: 2rem;
+}
+.shadow{
+    line-height: 48px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-top: 2px solid #d7d7d7;
+    border-bottom: 2px solid #ffffff;
+    /*background: url('') repeat-x;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.navbar{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-bottom: 15px;
+}
+
+
+/* 联系方式图标的放大 */
+.alert i:hover{
+	transform: scale(1.5);
+	
+}

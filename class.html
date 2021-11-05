@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>相册类博客项目</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--    字体图标文件-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <!--    Swipebox灯箱插件-->
+    <link rel="stylesheet" href="./swipebox-master/src/css/swipebox.css">
+    <!--    自定义css文件-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+<!--导航栏-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="index.html" class="navbar-brand"><img
+            src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4031816500,2465166800&fm=26&gp=0.jpg"
+            width="45" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="class.html" class="nav-link">分类</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">博客</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">联系</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input type="search" class="form-inline mr-sm-2" placeholder="搜索">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+    </div>
+</nav>
+<!--选项卡组-->
+<div class="container">
+    <div class="menu bg-dark">
+        <!--    选项卡-->
+        <ul class="nav nav-pills my-4 p-2" id="myTab">
+            <li>
+                <a href="#pills-home" class="ab" data-toggle="pill" >2021年</a>
+            </li>
+            <li>
+                <a href="#pills-profile" data-toggle="pill" >2020年</a>
+            </li>
+            <li>
+                <a href="#pills-contact"  data-toggle="pill" >2019年</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" >更多</a>
+            </li>
+        </ul>
+    </div>
+
+    <!--    选项卡内容-->
+    <div class="tab-content ">
+        <div class="tab-pane fade show active" id="pills-home">
+            <div class="row">
+                <div class="card-deck">
+                		<div class="car text-center col-md-4" >
+                			<!-- <div class="card-header bg-primary text-white">
+                				<h4>视频直播互动</h4>	
+                			</div> -->
+                			<div class="card-body">
+                			<img src="images/001.jpg" class="img-fluid" >
+                			<p class="card-text">借助云巴的第三方直播互动技术，直播平台可快速实现弹幕、打赏、点赞、点爱心等直播互动功能。</p>
+                			</div>
+                		</div>
+						<div class="car text-center col-md-4" >
+                				<!-- <div class="card-header bg-info text-white">
+                					<h4>掌阅iReader</h4>	
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/002.jpg" class="img-fluid" >
+                				<p class="card-text">用户量大对于公司来说是一件好事，然而，巨大的用户量也给 iReader 后端处理带来了麻烦。</p>
+                				</div>
+                			</div>
+						<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>即时通讯</h4>
+                					
+                				</div> -->
+                
+                				<div class="card-body">
+                					<img src="images/003.jpg" class="img-fluid" >
+                				<p class="card-text">随着移动互联网的发展，社交需求场景不再局限于 QQ、微信等个人聊天工具。</p>
+                				</div>
+                			</div>
+                						
+						<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>共享单车</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/004.jpg" class="img-fluid"  >
+                				<p class="card-text">使用云巴SDK的云巴共享单车锁，采用GPS 定位，用户可以通过蓝牙 + GPRS扫码开锁。</p>
+                				</div>
+                			</div>				
+                				
+                
+						<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-info text-white">
+                					<h4>智能门锁</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/005.jpg" class="img-fluid" >
+                				<p class="card-text">云巴智能蓝牙门锁一站式解决方案</p>
+                				</div>
+                			</div>				
+                
+						<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>智能车位锁</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/img2.jpg" class="img-fluid">
+                				<p class="card-text">云巴共享车位方案包含智能车位锁，APP开发，电子控制系统，提供一站式解决方案。</p>
+                				</div>
+                			</div>				
+                			</div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile">
+            <div class="row">
+                <div class="card-deck">
+                		<div class="car text-center col-md-4" >
+                			<!-- <div class="card-header bg-primary text-white">
+                				<h4>视频直播互动</h4>	
+                			</div> -->
+                			<div class="card-body">
+                			<img src="images/001.jpg" class="img-fluid" >
+                			<p class="card-text">借助云巴的第三方直播互动技术，直播平台可快速实现弹幕、打赏、点赞、点爱心等直播互动功能。</p>
+                			</div>
+                		</div>
+                		<div class="car text-center col-md-4" >
+                				<!-- <div class="card-header bg-info text-white">
+                					<h4>掌阅iReader</h4>	
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/002.jpg" class="img-fluid" >
+                				<p class="card-text">用户量大对于公司来说是一件好事，然而，巨大的用户量也给 iReader 后端处理带来了麻烦。</p>
+                				</div>
+                			</div>
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>即时通讯</h4>
+                					
+                				</div> -->
+                
+                				<div class="card-body">
+                					<img src="images/003.jpg" class="img-fluid" >
+                				<p class="card-text">随着移动互联网的发展，社交需求场景不再局限于 QQ、微信等个人聊天工具。</p>
+                				</div>
+                			</div>
+                						
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>共享单车</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/004.jpg" class="img-fluid"  >
+                				<p class="card-text">使用云巴SDK的云巴共享单车锁，采用GPS 定位，用户可以通过蓝牙 + GPRS扫码开锁。</p>
+                				</div>
+                			</div>				
+                				
+                
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-info text-white">
+                					<h4>智能门锁</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/005.jpg" class="img-fluid" >
+                				<p class="card-text">云巴智能蓝牙门锁一站式解决方案</p>
+                				</div>
+                			</div>				
+                
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>智能车位锁</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/img2.jpg" class="img-fluid">
+                				<p class="card-text">云巴共享车位方案包含智能车位锁，APP开发，电子控制系统，提供一站式解决方案。</p>
+                				</div>
+                			</div>				
+                			</div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact">
+            <div class="row">
+                <div class="card-deck">
+                		<div class="car text-center col-md-4" >
+                			<!-- <div class="card-header bg-primary text-white">
+                				<h4>视频直播互动</h4>	
+                			</div> -->
+                			<div class="card-body">
+                			<img src="images/001.jpg" class="img-fluid" >
+                			<p class="card-text">借助云巴的第三方直播互动技术，直播平台可快速实现弹幕、打赏、点赞、点爱心等直播互动功能。</p>
+                			</div>
+                		</div>
+                		<div class="car text-center col-md-4" >
+                				<!-- <div class="card-header bg-info text-white">
+                					<h4>掌阅iReader</h4>	
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/002.jpg" class="img-fluid" >
+                				<p class="card-text">用户量大对于公司来说是一件好事，然而，巨大的用户量也给 iReader 后端处理带来了麻烦。</p>
+                				</div>
+                			</div>
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>即时通讯</h4>
+                					
+                				</div> -->
+                
+                				<div class="card-body">
+                					<img src="images/003.jpg" class="img-fluid" >
+                				<p class="card-text">随着移动互联网的发展，社交需求场景不再局限于 QQ、微信等个人聊天工具。</p>
+                				</div>
+                			</div>
+                						
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>共享单车</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/004.jpg" class="img-fluid"  >
+                				<p class="card-text">使用云巴SDK的云巴共享单车锁，采用GPS 定位，用户可以通过蓝牙 + GPRS扫码开锁。</p>
+                				</div>
+                			</div>				
+                				
+                
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-info text-white">
+                					<h4>智能门锁</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/005.jpg" class="img-fluid" >
+                				<p class="card-text">云巴智能蓝牙门锁一站式解决方案</p>
+                				</div>
+                			</div>				
+                
+                		<div class="car text-center col-md-4">
+                				<!-- <div class="card-header bg-primary text-white">
+                					<h4>智能车位锁</h4>
+                					
+                				</div> -->
+                				<div class="card-body">
+                					<img src="images/img2.jpg" class="img-fluid">
+                				<p class="card-text">云巴共享车位方案包含智能车位锁，APP开发，电子控制系统，提供一站式解决方案。</p>
+                				</div>
+                			</div>				
+                			</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="js/bootstrap.min.js"></script>
+<!--swipebox插件-->
+<script src="swipebox-master/lib/jquery-2.1.0.min.js"></script>
+<script src="swipebox-master/src/js/jquery.swipebox.js"></script>
+<script>
+    jQuery(function ($) {
+        $('.swipebox').swipebox({
+            useCSS:true,
+            useSVG:true,
+            initialIndexOnArray:0,
+            hideCloseButtonOnMobile:false,
+            removeBarsOnMobile:true,
+            hideBarsDelay:3000,
+            loopAtEnd:false,
+        });
+    });
+</script>
+</body>
+</html>
